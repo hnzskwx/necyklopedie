@@ -5,8 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Lukas Kril - Bestiář</title>
+    <style>
+        /* Zajištění, že video pokryje celé pozadí */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #video-background {
+            position: fixed; /* Fixní pozice, aby video zůstalo na pozadí */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Zajištění, že video pokryje celé pozadí */
+            z-index: -1; /* Video bude za ostatním obsahem */
+        }
+
+        /* Zajištění, že obsah stránky může scrollovat */
+        main {
+            position: relative;
+            z-index: 1; /* Obsah bude nad videem */
+            padding: 20px;
+            
+        }
+        
+        .kril-title {
+            color: black; /* Nastavení černé barvy pouze pro tento nadpis */
+        }
+    </style>
 </head>
 <body>
+    <!-- Video na pozadí -->
+    <video id="video-background" autoplay muted loop>
+        <source src="kril.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <header>
         <h1>Bestiář</h1>
         <nav>
@@ -17,33 +53,75 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <article class="wiki-article">
-            <h1>Lukas Kril</h1>
+            <h1 class="kril-title">Lukas Kril</h1>
             <div class="infobox">
                 <img src="../images/kril1.jpg" alt="Lukas Kril" class="infobox-image">
                 <p><strong>Jméno:</strong> Lukas Kril</p>
-                <p><strong>Přezdívka:</strong> Krilátor</p>
-                <p><strong>Známý pro:</strong> Největší bestie v historii</p>
+                <p><strong>Přezdívka:</strong> Vztelký pes</p>
+                <p><strong>Narození:</strong> Vylíhnutí z vajíčka na hoře Říp</p>
+                <p><strong>Smrt:</strong> Do roku 2030 snad</p>
+                <p><strong>Bydliště:</strong> Valdice</p>
+                <p><strong>Známý pro:</strong> Fetování, Chlastání, Podělky, Folou za folou, Nabydki stale platy, Clas of sars, Hankabrasko, Pan Mlinas, Mama</p>
             </div>
+
             <section>
                 <h2>Životopis</h2>
-                <p>Lukas Kril je známý jako jedna z největších bestií v historii. Jeho příběh začal v malém městě, kde se rychle stal legendou díky svým neuvěřitelným schopnostem a charismatu.</p>
-                <p>Jeho přezdívka "Krilátor" vznikla díky jeho neúnavné energii a schopnosti překonávat jakékoli překážky.</p>
+                <p>Lukáš Kril je člověk, jehož život by mohl sloužit jako scénář pro nejdivnější reality show na světě. Je známý tím, že dokáže přežít ve světě plném chaosu, a to díky svým schopnostem v oblasti „vědeckého“ užívání drog, neuvěřitelných triků při „ojebávání“ systému a samozřejmě fenomenálních výkonů v Clash of the Stars.</p>
+                <p>V roce 2024 byl odsouzen na 3 roky vězení za neúčast na veřejně prospěšných pracích, které dostal za to, že nechal Hankubráško na ulici 7 dní. Jeho obhajoba zněla: „NENE jenom tši.“</p>
             </section>
+
             <section>
-                <h2>Významné činy</h2>
+                <h2>Dovednosti</h2>
                 <ul>
-                    <li>Porazil všechny své protivníky v soutěži "Bestie roku".</li>
-                    <li>Stal se inspirací pro mnoho dalších speciálů.</li>
-                    <li>Jeho příběh byl zpracován v několika knihách a filmech.</li>
+                    <li>Fetování - Lukaš je známý svou „vědeckou“ metodou užívání drog.</li>
+                    <li>Chlastání - Jeho schopnost vypít neuvěřitelné množství alkoholu je legendární.</li>
+                    <li>Podělky - Lukaš je mistrem v „ojebávání“ systému a hledání mezer v pravidlech.</li>
+                    <li>Folou za folou - Jeho přístup k sociálním sítím je příkladem moderního marketingu.</li>
+                    <li>Clash of Stars - Jeho fenomenální výkony v této soutěži mu zajistily místo mezi legendami.</li>
                 </ul>
             </section>
+
+            <section>
+                <h2>Osobní život</h2>
+                <p>Lukáš Kril je známý svou kontroverzní povahou, která se projevuje nejen v jeho veřejném životě, ale i v soukromí. Jeho vztahy s rodinou a přáteli jsou často komplikované, ale jeho charisma a smysl pro humor mu pomáhají udržovat si blízké.</p>
+                <p>Jeho oblíbené aktivity zahrnují sledování reality show, hraní videoher a pořádání večírků, které se staly legendárními mezi jeho přáteli.</p>
+            </section>
+
+            <section>
+                <h2>Kontroverze</h2>
+                <p>Lukáš Kril byl několikrát zapleten do kontroverzních situací, které zahrnovaly nejen jeho osobní život, ale i veřejné vystupování. Jedním z nejznámějších incidentů bylo jeho vystoupení na veřejné akci, kde se pokusil obhájit své kontroverzní názory na moderní společnost.</p>
+                <p>Další kontroverze zahrnovala jeho účast v reality show, kde byl obviněn z manipulace s ostatními soutěžícími. Přesto si udržel podporu svých fanoušků, kteří oceňují jeho odvahu a autenticitu.</p>
+            </section>
+
+            <section>
+                <h2>Citáty</h2>
+                <ul>
+                    <li>„NENE jenom tši.“</li>
+                    <li>„Fetování je věda, ne závislost.“</li>
+                    <li>„Když nemáš plán, improvizuj.“</li>
+                    <li>„Každý den je příležitost k něčemu šílenému.“</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Zajímavosti</h2>
+                <ul>
+                    <li>Lukáš Kril má sbírku více než 100 párů bot, které nosí na různé příležitosti.</li>
+                    <li>Jeho oblíbené jídlo je pizza s ananasem, což často vyvolává debaty mezi jeho fanoušky.</li>
+                    <li>Jednou se pokusil vytvořit vlastní značku energetických nápojů, ale projekt skončil neúspěchem.</li>
+                    <li>Jeho oblíbený film je „Pulp Fiction“ a často cituje dialogy z tohoto filmu.</li>
+                </ul>
+            </section>
+
             <section>
                 <h2>Galerie</h2>
                 <img src="../images/kril2.jpg" alt="Lukas Kril v akci" class="gallery-image">
                 <p>Obrázek: Lukas Kril během soutěže "Bestie roku".</p>
             </section>
+
             <section>
                 <h2>Odkazy</h2>
                 <ul>

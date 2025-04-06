@@ -14,42 +14,35 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-
 nav {
-    background-color: #f4f4f4;
+    background-color: transparent; /* Make nav background transparent */
     padding: 10px;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
-
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 400;
     transition: color 0.3s;
 }
-
 nav ul li a:hover {
     color: #070604;
 }
-
 header {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
     padding: 20px;
     text-align: center;
     font-size: 1.8em;
@@ -57,21 +50,18 @@ header {
     letter-spacing: 2px;
     border-bottom: 2px solid #ffffff;
 }
-
 header h1 {
     margin: 0;
     font-size: 2.5em;
 }
-
 nav ul.menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #fafafa;
+    background: transparent; /* Add transparency to the menu */
 }
-
 nav ul.menu li {
     margin: 0;
 }
@@ -85,11 +75,7 @@ nav ul.menu li a {
     transition: background-color 0.3s;
 }
 
-nav ul.menu li a:hover,
-nav ul.menu li a.active {
-    background-color: #ffffff;
-    border-radius: 5px;
-}
+
 
 main {
     flex: 1;
@@ -168,7 +154,7 @@ footer {
 }
 
 .menu-item a:hover {
-    color: #f2a500;
+    color: #000000;
 }
 
 footer {
@@ -194,7 +180,7 @@ footer {
 
 .wiki-article h1 {
     font-size: 2em;
-    color: #f2a500;
+    color: #000000;
     text-align: center;
     margin-bottom: 20px;
 }
